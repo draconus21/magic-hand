@@ -1,0 +1,9 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+
+PROJECT( cursor_control )
+
+FIND_PACKAGE( OpenCV REQUIRED )
+
+ADD_EXECUTABLE( cursor_control cctrl.cpp )
+
+TARGET_LINK_LIBRARIES( cursor_control ${OpenCV_LIBS} )
